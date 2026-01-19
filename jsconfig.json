@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+		"target": "ES2021" /* target is ES6 browsers (IE11 requires ES5 transpilation, but Promise/fetch are already polyfilled) */,
+		"module": "commonJS", // relevant for type annotations /* @type {import('../node_modules/xyz')} */someArg in the js code
+		"lib": ["es2016", "dom", "es6"], // libraries that are globally loaded in the environment at runtime (browser)
+		"strict": true, // always
+		"checkJs": true, // proofing
+		"noImplicitAny": false, // require no explicit typing in javascript
+		"baseUrl": ".",
+		"paths": {
+			"*": [
+				".breIncludes/*",
+				"src/Core/ShareflexAddons/@types/*"
+			]
+		}
+	},
+	"include": [
+		"**/*" // your code files in any directory
+	],
+	"exclude": [
+		"node_modules", // don't recompile code from packages
+		"dist" // don't ever look at the output
+	],
+	"files": [
+		"node_modules/@shareflex/forms-sdk/@types/globals.d.ts" // include the SF api global object
+	]
+}

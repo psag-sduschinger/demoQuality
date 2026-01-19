@@ -1,0 +1,9 @@
+/node_modules
+/.tmp
+*.log
+/dist
+/config/private.*
+/config/creds_*.json
+bre.json
+/.breIncludes
+.jshintrc

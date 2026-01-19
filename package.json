@@ -1,0 +1,19 @@
+{
+	"author": "TODO",
+	"license": "ISC",
+	"description": "TODO: Project name",
+	"scripts": {
+		"setup": "npm i --save-dev"
+	},
+	"repository": {
+		"type": "git",
+		"url": "TODO"
+	},
+	"devDependencies": {
+		"@pnp/sp": "^2.2.0",
+		"@shareflex/forms-sdk": "^2025.12.3",
+		"gulp": "^4.0.2",
+		"del": "^2.2.2",
+		"merge-stream": "^1.0.1"
+	}
+}

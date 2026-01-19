@@ -1,0 +1,60 @@
+{
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Attach to ClearScript V8 on port 9222",
+        "type": "node",
+        "request": "attach",
+        "protocol": "inspector",
+        "address": "localhost",
+        "port": 9222
+      },
+      {
+        "type": "shareflex",
+        "name": "Information",
+        "stopOnEntry": false,
+        "request": "launch",
+        "program": "${file}",
+        "debugServer": 4711,
+        "logLevel": "Information"
+    },
+    {
+        "type": "shareflex",
+        "name": "Warning",
+        "stopOnEntry": false,
+        "request": "launch",
+        "program": "${file}",
+        "debugServer": 4711,
+        "logLevel": "Warning"
+    },
+    {
+        "type": "shareflex",
+        "name": "Error",
+        "stopOnEntry": false,
+        "request": "launch",
+        "program": "${file}",
+        "debugServer": 4711,
+        "logLevel": "Error"
+    },
+    {
+        "type": "shareflex",
+        "name": "Verbose",
+        "stopOnEntry": false,
+        "request": "launch",
+        "program": "${file}",
+        "debugServer": 4711,
+        "logLevel": "Verbose"
+    },
+    {
+        "type": "shareflex",
+        "name": "Debug",
+        "stopOnEntry": false,
+        "request": "launch",
+        "program": "${file}",
+        "debugServer": 4711,
+        "logLevel": "Debug"
+    }
+    ]
+  }
+}
