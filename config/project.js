@@ -1,3 +1,3 @@
 module.exports = {
-	projectName: "TODO"
+	projectName: 'demoQuality',
 };
